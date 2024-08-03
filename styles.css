@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    flex: 1;
+}
+
+#logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    flex: 3;
+    text-align: right;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .line2 {
+        opacity: 0;
+    }
+
+    .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Hero Section Styles */
+#hero {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* About Section Styles */
+#about {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+
+/* Product Section Styles */
+#product {
+    padding: 80px 0;
+    background-color: #f0f0f0;
+}
+
+#product h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#product p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+
+.features {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+/* Benefits Section Styles */
+#benefits {
+    padding: 80px 0;
+    background-color: #fff
