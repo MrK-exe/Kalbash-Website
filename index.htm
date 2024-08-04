@@ -111,6 +111,10 @@
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
+        
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -124,17 +128,17 @@
         <div class="container">
             <div id="logo">
                 <h1 id="logo-en">Kalbash</h1>
-                <h1 id="logo-ar" style="display: none;">كلباش</h1>
+                <h1 id="logo-ar" class="hidden">كلباش</h1>
                 <p id="slogan-en">Smart Parking Solutions</p>
-                <p id="slogan-ar" style="display: none;">حلول ذكية لمشاكل وقوف السيارات</p>
+                <p id="slogan-ar" class="hidden">حلول ذكية لمشاكل وقوف السيارات</p>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#product">Product</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#design-roadmap">Roadmap</a></li>
+                    <li><a href="#about" data-en="About" data-ar="حول">About</a></li>
+                    <li><a href="#product" data-en="Product" data-ar="منتج">Product</a></li>
+                    <li><a href="#benefits" data-en="Benefits" data-ar="فوائد">Benefits</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    <li><a href="#design-roadmap" data-en="Roadmap" data-ar="خارطة الطريق">Roadmap</a></li>
                 </ul>
             </nav>
         </div>
@@ -144,27 +148,27 @@
     <section id="hero">
         <div class="container">
             <h1 id="hero-title-en">Transforming Urban Parking</h1>
-            <h1 id="hero-title-ar" style="display: none;">تحويل مواقف السيارات الحضرية</h1>
+            <h1 id="hero-title-ar" class="hidden">تحويل مواقف السيارات الحضرية</h1>
             <p id="hero-text-en">Introducing the Smart Car Clamp for seamless parking enforcement and management.</p>
-            <p id="hero-text-ar" style="display: none;">تقديم مشبك السيارة الذكي لإدارة وتنفيذ إجراءات التوقف عند الحاجة.</p>
+            <p id="hero-text-ar" class="hidden">تقديم مشبك السيارة الذكي لإدارة وتنفيذ إجراءات التوقف عند الحاجة.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2 id="about-title-en">About Kalbash</h2>
-            <h2 id="about-title-ar" style="display: none;">حول كلباش</h2>
+            <h2 id="about-title-ar" class="hidden">حول كلباش</h2>
             <p id="about-text-en">Kalbash is dedicated to revolutionizing urban parking and traffic management with innovative technology solutions.</p>
-            <p id="about-text-ar" style="display: none;">تكرس كلباش لإحداث ثورة في مجال إدارة مواقف السيارات الحضرية وإدارة حركة المرور بحلول تكنولوجية مبتكرة.</p>
+            <p id="about-text-ar" class="hidden">تكرس كلباش لإحداث ثورة في مجال إدارة مواقف السيارات الحضرية وإدارة حركة المرور بحلول تكنولوجية مبتكرة.</p>
         </div>
     </section>
     
     <section id="product">
         <div class="container">
             <h2 id="product-title-en">Our Product: Smart Car Clamp</h2>
-            <h2 id="product-title-ar" style="display: none;">منتجنا: مشبك السيارة الذكي</h2>
+            <h2 id="product-title-ar" class="hidden">منتجنا: مشبك السيارة الذكي</h2>
             <p id="product-text-en">The Smart Car Clamp by Kalbash is a cutting-edge device designed to streamline parking enforcement and improve user experience.</p>
-            <p id="product-text-ar" style="display: none;">مشبك السيارة الذكي من كلباش هو جهاز متطور يهدف إلى تبسيط إدارة وتنفيذ إجراءات التوقف وتحسين تجربة المستخدم.</p>
+            <p id="product-text-ar" class="hidden">مشبك السيارة الذكي من كلباش هو جهاز متطور يهدف إلى تبسيط إدارة وتنفيذ إجراءات التوقف وتحسين تجربة المستخدم.</p>
             <ul class="features">
                 <li>Instant remote unlocking upon payment via QR code.</li>
                 <li>Real-time location tracking through our software, similar to scooter-sharing apps.</li>
@@ -177,7 +181,7 @@
     <section id="benefits">
         <div class="container">
             <h2 id="benefits-title-en">Benefits</h2>
-            <h2 id="benefits-title-ar" style="display: none;">الفوائد</h2>
+            <h2 id="benefits-title-ar" class="hidden">الفوائد</h2>
             <ul>
                 <li>Efficient and fair parking enforcement.</li>
                 <li>Enhanced user convenience with quick payment and release.</li>
@@ -189,7 +193,7 @@
     <section id="contact">
         <div class="container">
             <h2 id="contact-title-en">Contact Us</h2>
-            <h2 id="contact-title-ar" style="display: none;">اتصل بنا</h2>
+            <h2 id="contact-title-ar" class="hidden">اتصل بنا</h2>
             <p>If you're interested in partnering or investing in Kalbash, please reach out to us at <a href="mailto:info@kalbash.com">info@kalbash.com</a>.</p>
         </div>
     </section>
@@ -198,12 +202,12 @@
     <section id="design-roadmap">
         <div class="container">
             <h2 id="design-roadmap-title-en">Roadmap</h2>
-            <h2 id="design-roadmap-title-ar" style="display: none;">التصميم وخارطة الطريق</h2>
+            <h2 id="design-roadmap-title-ar" class="hidden">التصميم وخارطة الطريق</h2>
             <p id="design-roadmap-text-en">Explore the design principles and roadmap of Kalbash's innovative smart parking solutions.</p>
-            <p id="design-roadmap-text-ar" style="display: none;">استكشف مبادئ التصميم وخارطة الطريق لحلول كلباش المبتكرة لوقوف السيارات.</p>
+            <p id="design-roadmap-text-ar" class="hidden">استكشف مبادئ التصميم وخارطة الطريق لحلول كلباش المبتكرة لوقوف السيارات.</p>
             <div class="roadmap">
                 <h3 id="roadmap-title-en">Development Phases</h3>
-                <h3 id="roadmap-title-ar" style="display: none;">مراحل التطوير</h3>
+                <h3 id="roadmap-title-ar" class="hidden">مراحل التطوير</h3>
                 <ul>
                     <li>Phase 1: Conceptualization and Prototype Development</li>
                     <li>Phase 2: Testing and Validation</li>
@@ -219,7 +223,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Select elements
             const languageButton = document.querySelector('.language-toggle button');
-            const nav = document.querySelector('.nav-links');
 
             // Function to toggle between languages
             function toggleLanguage() {
@@ -235,28 +238,15 @@
                 // Update text direction for Arabic
                 document.body.dir = (newLang === 'ar') ? 'rtl' : 'ltr';
                 
-                // Close navigation menu on language toggle (if open)
-                nav.classList.remove('active');
-            }
-
-            // Smooth scrolling for anchor links
-            const links = document.querySelectorAll('.nav-links a');
-
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href').substring(1); // Get target section ID excluding '#'
-                    const targetSection = document.getElementById(targetId); // Find target section
-
-                    if (targetSection) {
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                // Show/hide content based on language
+                document.querySelectorAll('[id$="-en"]').forEach(el => el.classList.toggle('hidden', newLang === 'ar'));
+                document.querySelectorAll('[id$="-ar"]').forEach(el => el.classList.toggle('hidden', newLang === 'en'));
+                
+                // Update navigation links
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.textContent = link.getAttribute(`data-${newLang}`);
                 });
-            });
+            }
 
             // Language toggle functionality
             languageButton.addEventListener('click', toggleLanguage);
