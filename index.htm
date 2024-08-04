@@ -5,13 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalbash - Smart Parking Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for language toggle */
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+        
+        .language-toggle button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .language-toggle button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Techy Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1, header p {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links a.active {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        .roadmap ul, .features {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .roadmap li, .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button>EN</button>
+    </div>
+
+    <!-- Header -->
     <header>
         <div class="container">
             <div id="logo">
-                <h1>Kalbash</h1>
-                <p>Smart Parking Solutions</p>
+                <h1 id="logo-en">Kalbash</h1>
+                <h1 id="logo-ar" style="display: none;">كلباش</h1>
+                <p id="slogan-en">Smart Parking Solutions</p>
+                <p id="slogan-ar" style="display: none;">حلول ذكية لمشاكل وقوف السيارات</p>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -19,35 +134,37 @@
                     <li><a href="#product">Product</a></li>
                     <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="design.htm">Design/Roadmap</a></li>
+                    <li><a href="#design-roadmap">Roadmap</a></li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </nav>
         </div>
     </header>
 
+    <!-- Sections (About, Product, Benefits, Contact) -->
     <section id="hero">
         <div class="container">
-            <h1>Transforming Urban Parking</h1>
-            <p>Introducing the Smart Car Clamp for seamless parking enforcement and management.</p>
+            <h1 id="hero-title-en">Transforming Urban Parking</h1>
+            <h1 id="hero-title-ar" style="display: none;">تحويل مواقف السيارات الحضرية</h1>
+            <p id="hero-text-en">Introducing the Smart Car Clamp for seamless parking enforcement and management.</p>
+            <p id="hero-text-ar" style="display: none;">تقديم مشبك السيارة الذكي لإدارة وتنفيذ إجراءات التوقف عند الحاجة.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2>About Kalbash</h2>
-            <p>Kalbash is dedicated to revolutionizing urban parking and traffic management with innovative technology solutions.</p>
+            <h2 id="about-title-en">About Kalbash</h2>
+            <h2 id="about-title-ar" style="display: none;">حول كلباش</h2>
+            <p id="about-text-en">Kalbash is dedicated to revolutionizing urban parking and traffic management with innovative technology solutions.</p>
+            <p id="about-text-ar" style="display: none;">تكرس كلباش لإحداث ثورة في مجال إدارة مواقف السيارات الحضرية وإدارة حركة المرور بحلول تكنولوجية مبتكرة.</p>
         </div>
     </section>
     
     <section id="product">
         <div class="container">
-            <h2>Our Product: Smart Car Clamp</h2>
-            <p>The Smart Car Clamp by Kalbash is a cutting-edge device designed to streamline parking enforcement and improve user experience.</p>
+            <h2 id="product-title-en">Our Product: Smart Car Clamp</h2>
+            <h2 id="product-title-ar" style="display: none;">منتجنا: مشبك السيارة الذكي</h2>
+            <p id="product-text-en">The Smart Car Clamp by Kalbash is a cutting-edge device designed to streamline parking enforcement and improve user experience.</p>
+            <p id="product-text-ar" style="display: none;">مشبك السيارة الذكي من كلباش هو جهاز متطور يهدف إلى تبسيط إدارة وتنفيذ إجراءات التوقف وتحسين تجربة المستخدم.</p>
             <ul class="features">
                 <li>Instant remote unlocking upon payment via QR code.</li>
                 <li>Real-time location tracking through our software, similar to scooter-sharing apps.</li>
@@ -59,7 +176,8 @@
     
     <section id="benefits">
         <div class="container">
-            <h2>Benefits</h2>
+            <h2 id="benefits-title-en">Benefits</h2>
+            <h2 id="benefits-title-ar" style="display: none;">الفوائد</h2>
             <ul>
                 <li>Efficient and fair parking enforcement.</li>
                 <li>Enhanced user convenience with quick payment and release.</li>
@@ -70,11 +188,79 @@
     
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2 id="contact-title-en">Contact Us</h2>
+            <h2 id="contact-title-ar" style="display: none;">اتصل بنا</h2>
             <p>If you're interested in partnering or investing in Kalbash, please reach out to us at <a href="mailto:info@kalbash.com">info@kalbash.com</a>.</p>
         </div>
     </section>
 
-    <script src="app.js"></script>
+    <!-- Roadmap Section -->
+    <section id="design-roadmap">
+        <div class="container">
+            <h2 id="design-roadmap-title-en">Roadmap</h2>
+            <h2 id="design-roadmap-title-ar" style="display: none;">التصميم وخارطة الطريق</h2>
+            <p id="design-roadmap-text-en">Explore the design principles and roadmap of Kalbash's innovative smart parking solutions.</p>
+            <p id="design-roadmap-text-ar" style="display: none;">استكشف مبادئ التصميم وخارطة الطريق لحلول كلباش المبتكرة لوقوف السيارات.</p>
+            <div class="roadmap">
+                <h3 id="roadmap-title-en">Development Phases</h3>
+                <h3 id="roadmap-title-ar" style="display: none;">مراحل التطوير</h3>
+                <ul>
+                    <li>Phase 1: Conceptualization and Prototype Development</li>
+                    <li>Phase 2: Testing and Validation</li>
+                    <li>Phase 3: Pilot Deployment in Urban Areas</li>
+                    <li>Phase 4: Scaling and Integration with Smart City Initiatives</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Language Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select elements
+            const languageButton = document.querySelector('.language-toggle button');
+            const nav = document.querySelector('.nav-links');
+
+            // Function to toggle between languages
+            function toggleLanguage() {
+                var currentLang = document.documentElement.lang;
+                var newLang = (currentLang === 'en') ? 'ar' : 'en'; // Toggle between 'en' and 'ar'
+                
+                // Set HTML lang attribute to toggle language
+                document.documentElement.lang = newLang;
+                
+                // Update button text accordingly
+                languageButton.textContent = (newLang === 'en') ? 'EN' : 'عربي';
+                
+                // Update text direction for Arabic
+                document.body.dir = (newLang === 'ar') ? 'rtl' : 'ltr';
+                
+                // Close navigation menu on language toggle (if open)
+                nav.classList.remove('active');
+            }
+
+            // Smooth scrolling for anchor links
+            const links = document.querySelectorAll('.nav-links a');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1); // Get target section ID excluding '#'
+                    const targetSection = document.getElementById(targetId); // Find target section
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Language toggle functionality
+            languageButton.addEventListener('click', toggleLanguage);
+        });
+    </script>
 </body>
 </html>
